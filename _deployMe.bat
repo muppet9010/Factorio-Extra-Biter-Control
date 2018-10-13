@@ -29,6 +29,7 @@ REM CREATE EXCLUDE FILES LIST
 ECHO .bat >> excludedfileslist.txt
 ECHO .xcf >> excludedfileslist.txt
 ECHO excludedfileslist.txt >> excludedfileslist.txt
+ECHO mod-portal-graphics >> excludedfileslist.txt
 
 REM COPY THE FILES
 XCOPY "%folderpath%" "%APPDATA%\Factorio\mods\%modfoldername%" /S /E /Y /I /Q /EXCLUDE:excludedfileslist.txt

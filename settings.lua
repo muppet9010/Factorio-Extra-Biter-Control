@@ -153,7 +153,7 @@ data:extend({
 	
 	
 	{
-		name = "pathfinder_max_long_paths",
+		name = "maximum_gathering_unit_groups",
 		type = "int-setting",
 		default_value = -1,
 		minimum_value = -1,
@@ -161,12 +161,31 @@ data:extend({
 		order = "2201"
 	},
 	{
-		name = "pathfinder_max_short_paths",
+		name = "maximum_unit_group_size",
 		type = "int-setting",
 		default_value = -1,
 		minimum_value = -1,
 		setting_type = "runtime-global",
 		order = "2202"
+	},
+	
+	
+	
+	{
+		name = "pathfinder_max_long_paths",
+		type = "int-setting",
+		default_value = -1,
+		minimum_value = -1,
+		setting_type = "runtime-global",
+		order = "2301"
+	},
+	{
+		name = "pathfinder_max_short_paths",
+		type = "int-setting",
+		default_value = -1,
+		minimum_value = -1,
+		setting_type = "runtime-global",
+		order = "2302"
 	},
 	{
 		name = "pathfinder_max_steps_worked_per_tick",
@@ -174,7 +193,7 @@ data:extend({
 		default_value = -1,
 		minimum_value = -1,
 		setting_type = "runtime-global",
-		order = "2203"
+		order = "2303"
 	},
 	
 })

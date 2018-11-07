@@ -1,5 +1,4 @@
 # Factorio-Extra-Biter-Control
-Gives extra control to tweak biter spawning, quantity and movement beyond standard map settings
 
 
 

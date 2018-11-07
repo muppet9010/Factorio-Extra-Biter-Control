@@ -14,6 +14,12 @@ UpdateSetting = function(settingName)
 	if settingName == "pathfinder_max_steps_worked_per_tick" or settingName == nil then
 		UpdatePathfindingMaxStepsPerTick()
 	end
+	if settingName == "maximum_gathering_unit_groups" or settingName == nil then
+		UpdateMaxGatheringUnitGroups()
+	end
+	if settingName == "maximum_unit_group_size" or settingName == nil then
+		UpdateMaxUnitGroupSize()
+	end
 end
 
 UpdatedStartingEvolutionSetting = function()
@@ -54,6 +60,20 @@ UpdatePathfindingMaxStepsPerTick = function()
 	local maxStepsSetting = tonumber(settings.global["pathfinder_max_steps_worked_per_tick"].value)
 	if maxStepsSetting > -1 then
 		game.map_settings.path_finder.max_steps_worked_per_tick = maxStepsSetting
+	end
+end
+
+UpdateMaxGatheringUnitGroups = function()
+	local gatheringUnitsSetting = tonumber(settings.global["maximum_gathering_unit_groups"].value)
+	if gatheringUnitsSetting > -1 then
+		game.map_settings.unit_group.max_gathering_unit_groups = gatheringUnitsSetting
+	end
+end
+
+UpdateMaxUnitGroupSize = function()
+	local unitGroupSizeSetting = tonumber(settings.global["maximum_unit_group_size"].value)
+	if unitGroupSizeSetting > -1 then
+		game.map_settings.unit_group.max_unit_group_size = unitGroupSizeSetting
 	end
 end
 

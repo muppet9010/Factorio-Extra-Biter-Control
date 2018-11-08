@@ -97,14 +97,22 @@ end
 
 
 
+CreateGlobals = function()
+	if global.ModSettings == nil then global.ModSettings = {} end
+end
+
+ReferenceGlobals = function()
+	ModSettings = global.ModSettings
+end
+
 OnStartup = function()
-	OnLoad()
+	CreateGlobals()
+	ReferenceGlobals()
 	UpdateSetting(nil)
 end
 
 OnLoad = function()
-	if global.ModSettings == nil then global.ModSettings = {} end
-	ModSettings = global.ModSettings
+	ReferenceGlobals()
 end
 
 On10SecondUpdate = function()

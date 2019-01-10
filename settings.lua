@@ -1,4 +1,4 @@
-data:extend({	
+data:extend({
 	{
 		name = "biter_collision_box_percent",
 		type = "int-setting",
@@ -32,9 +32,9 @@ data:extend({
 		setting_type = "startup",
 		order = "1104"
 	},
-	
-	
-	
+
+
+
 	{
 		name = "min_pursue_time_ticks",
 		type = "int-setting",
@@ -68,9 +68,9 @@ data:extend({
 		setting_type = "startup",
 		order = "1204"
 	},
-	
-	
-	
+
+
+
 	{
 		name = "spawner_pollution_absorbtion_max",
 		type = "int-setting",
@@ -87,7 +87,7 @@ data:extend({
 		maximum_value = 100,
 		setting_type = "startup",
 		order = "1302"
-	}, 
+	},
 	{
 		name = "spawner_max_units_map",
 		type = "int-setting",
@@ -128,9 +128,18 @@ data:extend({
 		setting_type = "startup",
 		order = "1307"
 	},
-	
-	
-	
+
+	{
+		name = "worm_call_for_help_radius_tiles",
+		type = "int-setting",
+		default_value = -1,
+		minimum_value = -1,
+		setting_type = "startup",
+		order = "1401"
+	},
+
+
+
 	{
 		name = "starting_evolution_percentage",
 		type = "int-setting",
@@ -149,9 +158,9 @@ data:extend({
 		setting_type = "runtime-global",
 		order = "2102"
 	},
-	
-	
-	
+
+
+
 	{
 		name = "maximum_gathering_unit_groups",
 		type = "int-setting",
@@ -168,9 +177,9 @@ data:extend({
 		setting_type = "runtime-global",
 		order = "2202"
 	},
-	
-	
-	
+
+
+
 	{
 		name = "pathfinder_max_long_paths",
 		type = "int-setting",
@@ -195,5 +204,5 @@ data:extend({
 		setting_type = "runtime-global",
 		order = "2303"
 	},
-	
+
 })

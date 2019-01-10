@@ -1,10 +1,14 @@
+0.1.2
+---------
+	- Code: Tidy up new game and game loaded code.
+
 0.1.1
 -------
 	- Added: Settings for max_gathering_unit_groups and max_unit_group_size.
 	- Fixed: Multiplayer compatibility.
 	- Changed: Clarified mod settings text and the main mod's readme/description text to enhance clarity.
 	- Changed: Mod reacts to setting changed events rather than rely on polling where possible. Evolution control still applies on a poll.
-	
+
 0.1.0
 --------
 	- Initial Release

@@ -84,7 +84,7 @@ for _, unitPrototype in pairs(data.raw["unit-spawner"]) do
 		if spawnerMaxUnitsLocal > -1 then
 			unitPrototype.max_friends_around_to_spawn = spawnerMaxUnitsLocal
 		end
-		
+
 		local spawningCooldownMinEvo = unitPrototype.spawning_cooldown[1]
 		if spawnerSpawningCooldownMinEvolution_ticks > -1 then
 			spawningCooldownMinEvo = spawnerSpawningCooldownMinEvolution_ticks
@@ -94,9 +94,21 @@ for _, unitPrototype in pairs(data.raw["unit-spawner"]) do
 			spawningCooldownMaxEvo = spawnerSpawningCooldownMaxEvolution_ticks
 		end
 		unitPrototype.spawning_cooldown = {spawningCooldownMinEvo, spawningCooldownMaxEvo}
-		
+
 		if spawnerCallForHelpRadiusTiles > -1 then
 			unitPrototype.call_for_help_radius = spawnerCallForHelpRadiusTiles
+		end
+	end
+end
+
+
+
+--Turrets
+local wormCallForHelpRadiusTiles = tonumber(settings.startup["worm_call_for_help_radius_tiles"].value)
+for _, unitPrototype in pairs(data.raw["turret"]) do
+	if unitPrototype.subgroup == "enemies" then
+		if wormCallForHelpRadiusTiles > -1 then
+			unitPrototype.call_for_help_radius = wormCallForHelpRadiusTiles
 		end
 	end
 end

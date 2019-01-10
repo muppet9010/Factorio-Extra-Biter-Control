@@ -1,5 +1,6 @@
 0.1.2
 ---------
+	- Added: A worm call for help radius option to compliment the spawner call for help radius option.
 	- Code: Tidy up new game and game loaded code.
 
 0.1.1

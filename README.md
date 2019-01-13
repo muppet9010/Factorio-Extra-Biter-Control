@@ -15,6 +15,7 @@ Once a mod option has changed an internal game setting away from its default val
 Mod Setting Definitions
 ---------------
 The mod changes its settings during the data-final-fixes stage and uses filters to identify what it affects. So it should be compatible with other mods that change the gameplay or add new enemies, buildings, etc.
+
 - Biter = Any "unit" that is of group "enemies" with the word "biter" in its prototype (code) name.
 - Spitter = Any "unit" that is of group "enemies" with the word "spitter" in its prototype (code) name.
 - Biter and Spitter = Any "unit" that is of group "enemies".
@@ -24,6 +25,7 @@ The mod changes its settings during the data-final-fixes stage and uses filters 
 Advanced Mod Settings Information
 -----------
 All mod settings are of a technical nature and include detailed mod options hover text. Below are additional notes in relation to a few of the settings and the game mechanics they affect:
+
  - Biter and Spitter Death Blood Enabled = Can't be forced on via the mod as each enemy unit type has a unique setting and other mods may have added or changed this.
  - Pathfinder Maximum Concurrent Long Path Processing = How many long paths (default game pathing config around 100 tiles) will be processed at once. If using large numbers of concurrent pathing tasks (unit groups or individually commanded units) then increasing this setting can help avoid path re-use by them. When paths are re-used the unit groups/biters walk to the nearest existing path, forming a long column following the same path, rather than taking their own routes. Means they reach the target in a queue rather than as a wall of units. By default over 10 long paths requested at once will cause this queueing column effect. In testing, I have upped this from 10 to 100 without issues.
  - Pathfinder Maximum Concurrent Short Path Processing = Same as the long Path version, but for short paths. Increase similar logic to long paths. Defaults to 100, in testing, increased to 1000 without issues.

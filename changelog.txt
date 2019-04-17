@@ -1,21 +1,39 @@
-0.1.3
-----------
-	- Correction to Spawner Max Units mod settings titles and descriptions. No changes to settings impact.
-
-
-0.1.2
----------
-	- Added: A worm call for help radius option to compliment the spawner call for help radius option.
-	- Code: changed startup settings to be applied in data-fixes to try and overwrite other mods settings when this mods settings are populated. Will still be down to alphabetical mod order in some cases however.
-	- Code: Tidy up new game and game loaded code.
-
-0.1.1
--------
-	- Added: Settings for max_gathering_unit_groups and max_unit_group_size.
-	- Fixed: Multiplayer compatibility.
-	- Changed: Clarified mod settings text and the main mod's readme/description text to enhance clarity.
-	- Changed: Mod reacts to setting changed events rather than rely on polling where possible. Evolution control still applies on a poll.
-
-0.1.0
---------
-	- Initial Release
+---------------------------------------------------------------------------------------------------
+Version: 17.1.3
+Date: 2019-04-17
+  Features:
+    - Update to be 0.17 Factorio compatible
+  Changes:
+  Bugfixes:
+    - Correction to Spawner Max Units mod settings titles and descriptions. No changes to settings impact.
+  Info:
+    - Update changelog to 0.17 syntax
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2019-01-10
+  Features:
+    - Added A worm call for help radius option to compliment the spawner call for help radius option.
+  Changes:
+    - Changed startup settings to be applied in data-fixes to try and overwrite other mods settings when this mods settings are populated. Will still be down to alphabetical mod order in some cases however.
+  Bugfixes:
+  Info:
+    - Tidy up new game and game loaded code.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2018-11-07
+  Features:
+    - Added Settings for max_gathering_unit_groups and max_unit_group_size.
+  Changes:
+    - Clarified mod settings text and the main mod's readme/description text to enhance clarity.
+    - Mod reacts to setting changed events rather than rely on polling where possible. Evolution control still applies on a poll.
+  Bugfixes:
+    - Fixed Multiplayer compatibility.
+  Info:
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2018-10-13
+  Features:
+    - Initial release
+  Changes:
+  Bugfixes:
+  Info:

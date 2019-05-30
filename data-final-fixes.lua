@@ -121,7 +121,7 @@ if corpseDecaySeconds > 0 then
 	local corpseDecayTicks = corpseDecaySeconds * 60
 	local corpses = {}
 	for _, unitPrototype in pairs(data.raw.unit) do
-		if unitPrototype.subgroup == "enemies" then
+		if unitPrototype.subgroup == "enemies" and unitPrototype.corpse ~= nil then
 			corpses[unitPrototype.corpse] = 1
 		end
 	end
@@ -131,7 +131,7 @@ if corpseDecaySeconds > 0 then
 	end
 elseif corpseDecaySeconds == 0 then
 	for _, unitPrototype in pairs(data.raw.unit) do
-		if unitPrototype.subgroup == "enemies" then
+		if unitPrototype.subgroup == "enemies" and unitPrototype.corpse ~= nil then
 			unitPrototype.corpse = nil
 		end
 	end

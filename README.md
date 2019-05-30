@@ -8,9 +8,9 @@ The optional settings include:
 
  - Starting and max evolution
  - Enemy units hitbox size (allows smoother movement)
- - Enemy untis immune to belts
+ - Enemy units immune to belts
  - Enemy call for assistance and pursue options
- - Spawner pollution absorbtion and enemy generaton rates
+ - Spawner pollution absorption and enemy generation rates
  - Enemy attack group behaviours
  - Pathfinder concurrent activity limits
  - UPS optimisations (blood and corpses)

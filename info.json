@@ -1,13 +1,13 @@
 {
     "name": "extra_biter_control",
-    "version": "18.1.5",
+    "version": "20.1.6",
     "title": "Extra Biter Control",
     "author": "Muppet9010",
     "contact": "",
     "homepage": "",
-    "factorio_version": "0.18",
+    "factorio_version": "1.1",
     "dependencies": [
-        "base >= 0.18"
+        "base >= 1.1.0"
     ],
     "description": "Gives extra control to tweak biter spawning, quantity and movement beyond standard map settings"
 }

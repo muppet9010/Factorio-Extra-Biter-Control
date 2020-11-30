@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 20.1.6
+Date: 2020-11-30
+  Features:
+    - Updated to Factorio 1.1 as-is
+  Changes:
+    - Updated Factorio defaults listed for settings to match Factorio 1.1.
+  Bugfixes:
+    - Add limit to Vision Distance Tiles to match base game max supported value of 100.
+    - Spawner pollution absoption had typo and didn't apply.
+  Info:
+---------------------------------------------------------------------------------------------------
 Version: 18.1.5
 Date: 2020-01-26
   Features:
